@@ -5,39 +5,172 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sine Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <!-- Unicons CSS -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
   <link rel="stylesheet" href="style.css">
+  <!-- favcon -->
+  <link rel="icon" type="image/x-icon" href="../favicon.png">
 </head>
 <body>
-  <!-- radio -->
-  <input type="radio" id="sineAngleRadio" name="variables" checked>
-  <label for="sineAngleRadio">Sine Angle</label>
+  <div class="scrollTop">
+    <i class="fa fa-caret-up" aria-hidden="true"></i>
+  </div>
 
-  <input type="radio" id="oppositeAngleRadio" name="variables">
-  <label for="oppositeAngleRadio">Opposite Angle</label>
-
-  <input type="radio" id="hypotenuseAngleRadio" name="variables">
-  <label for="hypotenuseAngleRadio">Hypotenuse Angle</label><br><br>
-  <!-- end radio -->
+<!-- header -->
+<nav class="nav">
+  <i class="uil uil-bars navOpenBtn"></i>
   
-  <label for="v1" id="variable1">Opposite Angle</label>
-  <input type="number" id="v1"><br><br>
+  <ul id="nav-links" class="nav-links">
+    <i class="uil uil-times navCloseBtn"></i>
+    <a href="../../accounting calculators/index.html"><li><div class="link-text">Accounting</div></li></a>
+    <a href="../../area calculators/index.html"><li><div class="link-text">Area</div></li></a>
+    <a href="../../arithmetics calculators/index.html"><li><div class="link-text">Arithmetics</div></li></a>
+    <a href="../../chemistry calculators/index.html"><li><div class="link-text">Chemistry</div></li></a>
+    <a href="../../construction calculators/index.html"><li><div class="link-text">Construction</div></li></a>
+    <a href="../../conversion calculators/index.html"><li><div class="link-text">Conversion</div></li></a>
+    <a href="../../finance calculators/index.html"><li><div class="link-text">Finance</div></li></a>
+    <a href="../../geometry calculators/index.html"><li><div class="link-text">Geometry</div></li></a>
+    <a href="../../health calculators/index.html"><li><div class="link-text">Health</div></li></a>
+    <a id="selected-link" href="../../math calculators/index.html"><li><div class="link-text">Math</div></li></a>
+    <a href="../../physics calculators/index.html"><li><div class="link-text">Physics</div></li></a>
+    <a href="../../random calculators/index.html"><li><div class="link-text">Random</div></li></a>
+    <a href="../../SEO calculators/index.html"><li><div class="link-text">SEO</div></li></a>
+  </ul>
+    <a href="../../index.html">
+      <img src="../logo.png" alt="logo" class="logo">
+  </a>
+</nav>
+<!-- end header -->
   
-  <label for="v2" id="variable2">Hypotenuse Angle</label>
-  <input type="number" id="v2"><br><br>
+<div class="text-calculator-container">
+  <!-- calculator -->
+  
+  <div class="pattern">
+  <div class="calculator-container">
+    <div id="calculator">
 
-  <button id="btn">compute</button>
+    <!-- radio -->
 
-  <p id="result"></p>
-  <p>
-    Insert the information in the form and the calculator will determine the sine<br> 
-    What is the sine calculator?<br>
-    The sine calculator is a tool that determines the sine angle.<br>
-    How to calculate sine angle?<br>
-    To calculate sine angle you should use the following formula:<br>
-    sine angle = opposite angle / hypotenuse angle<br>
-    Why use sine calculator?<br>
-    The sine calculator is used in order to calculate the sine angle.<br>
-</p>
+    <div id="radio">
+      <div class="double-radios">
+        <label><input type="radio" id="sineAngleRadio" checked name="variables">Sine Angle</label>
+        <label><input type="radio" id="oppositeAngleRadio" name="variables">Opposite Angle</label>
+      </div>
+        <div class="single-radio">
+          <label><input type="radio" id="hypotenuseAngleRadio" name="variables">Hypotenuse Angle</label>
+        </div>
+    </div>
+
+    <!-- end radio -->
+
+      <div class="inputs">
+        <input id="v1" class="numbers-input first-input" ><label for="v1" id="variable1">Opposite Angle</label><br>
+        <input id="v2" class="numbers-input last-input"><label for="v2" id="variable2">Hypotenuse Angle</label><br><br>
+      </div>
+      <div class="buttons">
+        <button id="btn1" class="result-buttons">compute</button>
+        <button id="btn2" class="result-buttons">reset</button>
+      </div>
+      
+      <p id="result"></p>
+
+    </div>
+  </div>
+</div>
+  <!-- end calculator -->
+
+  <!-- text -->
+<div class="text">
+  <h4>Insert the information in the form and the calculator will determine the sine.</h4><br> 
+    <h3>What is the sine calculator?</h3><br>
+    <p>The sine calculator is a tool that determines the sine angle.</p><br>
+    <h3>How to calculate sine?</h3><br>
+    <p>To calculate sine you should use the following formula:<br>
+      sine angle = opposite angle / hypotenuse angle</p><br>
+    <h3>Why use sine calculator?</h3><br>
+    <p>The sine calculator is used in order to calculate the sine angle.</p><br>
+  </div>
+  <!-- end text-->
+</div>
+
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/cqIZue-plBI?si=8gc09Xr2VscjZGvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<!-- calculators cards -->
+
+<section id="other-calculators">
+  <div class="title">
+      <h1>Other people also used:</h1>
+  </div>
+  <div class="wrapper">
+      <div class="double-calculators">
+        <a href="../Tangent-Calculator/index.html">
+          <div class="single-calculator">
+              <span></span>
+              <h3>Tangent</h3>
+              <p>The tangent calculator is a tool that measures the tangent angle.</p>
+          </div>
+      </a>
+      <a href="../Volume-of-a-Cone-Calculator/index.html">
+        <div class="single-calculator">
+            <span></span>
+            <h3>Volume of a Cone</h3>
+            <p>The volume of a cone is the capacity or the space that is enclosed by the boundries of a cone.</p>
+        </div>
+    </a>
+      </div>
+      <div class="double-calculators">
+        <a href="../Archimedes-Principle-Calculator/index.html">
+          <div class="single-calculator">
+              <span></span>
+              <h3>Archimedes Principle</h3>
+              <p>The Archimedes principle calculator is a tool that computes the buoyant force of the body.</p>
+          </div>
+      </a>
+      <a href="../Central-Angle-of-a-Polygon-Calculator/index.html">
+        <div class="single-calculator">
+            <span></span>
+            <h3>Central Angle of a Polygon</h3>
+            <p>the angle whose vertex is the center and whose rays or sides contain the end points of a side of the regular polygon.</p>
+        </div>
+    </a>
+      </div>
+  </div>
+</section>
+
+<!-- end calculators cards -->
+
+  <!-- footer -->
+
+  <footer>
+    <a href="../../index.html">
+      <img src="../logo.png" alt="logo" class="logo">
+  </a>
+    <div class="footer-container">
+      <div class="footer-link">
+        <a href="../../math calculators/index.html">other math calculators</a>
+      </div>
+      <div class="footer-aboutus">
+        <h2>ABOUT US</h2>
+        <p>Welcome to Numerion, where we make complex equations accessible and learning enjoyable. By combining expert equation-solving services with comprehensive educational resources, Numerion offers tailored solutions for every learning level.</p>
+      </div>
+      <div class="footer-contactus">
+        <h2>CONTACT US</h2>
+        <div class="gmail">
+          <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+          <p><a href="mailto:contactnumerion@gmail.com">contactnumerion@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyrightText">
+    <p>Copyright @ 2025 Numerion. All Rights Reserved.</p>
+  </div>
+  <!-- end footer -->
+
   <script src="app.js"></script>
 </body>
 </html>
